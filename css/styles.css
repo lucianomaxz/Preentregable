@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, ul {
+    background-color: #F2EEE3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #5065A7;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+.footer-logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer-container, .footer-cl, .contactanos, .cuenta {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.footer-cl-item {
+    padding-right: 30px;
+}
+p {
+    color: #384d92;
+    font-family: 'Roboto', sans-serif;
+}
+
+.personas{
+    width: 100%;
+}
