@@ -4,14 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 header {
     position: sticky;
     top:0px;
-    z-index: 1;
+    z-index: 2;
 }
 
 header, ul {
-    background-color: #F2EEE3;
+    background-color: #ece4cd;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,12 +31,91 @@ header img {
     margin: 7px 7px;
 }
 
+.tamanio {
+    width: 50%;
+}
+.carousel-img {
+    width: 100%;
+    height: 500px;
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.masVendido, .categorias-padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+h2 {
+    margin-top: 10px;
+}
+
+.categorias-hijo {
+    display: grid;
+    grid-template-areas:
+    "categorias-hijo-item1" "categorias-hijo-item2" "categorias-hijo-item3"
+    "categorias-hijo-item4" "categorias-hijo-item5" "categorias-hijo-item6";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 100%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../imagenes/flecha.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(../imagenes/flecha.png);
+    transform: rotate(-180deg);
+}
+.productos {
+    display: flex;
+    width: 100%;
+}
+
+.producto-item{
+    width: 33%;
+    height: 250px;
+    margin: 3%;
+}
+
+.producto-item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 ul {
     list-style-type: none;
     justify-content: space-around;
     margin: 7px 7px;
+}
+
+.item1 {
+    background-image: url("../imagenes/producto1.png");
+}
+.item2 {
+    background-image: url("../imagenes/producto2.png");
+}
+
+.item3 {
+    background-image: url("../imagenes/producto3.png");
 }
 
 
@@ -52,18 +135,22 @@ a:link, a:visited, a:active {
     height: 30px;
 }
 
+footer {
+    background-color: #ece4cd;
+}
 
 .footer-container, .footer-cl, .contactanos, .cuenta {
     display: flex;
     justify-content: space-between;   
 }
 
-.footer-cl-item {
-    padding-right: 30px;
-}
+
 p {
     color: #384d92;
+}
 
+.p-horarios {
+    margin-left: 20%;
 }
 
 .personas{
