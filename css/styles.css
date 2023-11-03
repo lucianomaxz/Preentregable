@@ -23,6 +23,10 @@ header, ul {
 
 }
 
+.nav2 {
+    display: none;
+}
+
 nav {
     width: 50%;
 }
@@ -31,12 +35,28 @@ header img {
     margin: 7px 7px;
 }
 
+h1,h2 {
+    margin-top: 10px;
+    color: #3b529e;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.vendidoP {
+    margin-left: 25px;
+}
+
 .tamanio {
-    width: 50%;
+    width: 55%;
 }
 .carousel-img {
     width: 100%;
-    height: 500px;
+    height: 800px;
 }
 
 .ofertas{
@@ -45,6 +65,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+
 }
 
 .masVendido, .categorias-padre{
@@ -55,9 +76,7 @@ header img {
     height: 100%;
     margin-top: 15px;
 }
-h2 {
-    margin-top: 10px;
-}
+
 
 .categorias-hijo {
     display: grid;
@@ -77,6 +96,21 @@ h2 {
     background-image: url(../imagenes/flecha.png);
     transform: rotate(-180deg);
 }
+
+.cat-item {
+    width: 100%;
+    height: 100%;
+}
+
+.item-a {
+    width: 100%;
+    height: 100%;
+}
+.categoria-imagen {
+    width: 200px;
+    height: 200px;
+}
+
 .productos {
     display: flex;
     width: 100%;
@@ -84,7 +118,7 @@ h2 {
 
 .producto-item{
     width: 33%;
-    height: 250px;
+    height: 400px;
     margin: 3%;
 }
 
@@ -135,8 +169,13 @@ a:link, a:visited, a:active {
     height: 30px;
 }
 
+.logo-X, .logo-IG {
+    margin-left: 5%;
+}
+
 footer {
     background-color: #ece4cd;
+    margin-top: 20px;
 }
 
 .footer-container, .footer-cl, .contactanos, .cuenta {
@@ -155,4 +194,80 @@ p {
 
 .personas{
     width: 100%;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+
+nav {
+    width: 70%;
+}
+.tamanio {
+    width: 70%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 700px;
+}
+
+}
+
+@media only screen and (max-width: 1036px) {
+
+    .tamanio {
+        width: 55%;
+    }
+    
+    .carousel-img {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .categorias-hijo {
+        display: grid;
+        grid-template-areas:
+        "categorias-hijo-item1" "categorias-hijo-item2"
+        "categorias-hijo-item3" "categorias-hijo-item4"
+        "categorias-hijo-item5" "categorias-hijo-item6";
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        width: 100%;
+    }
+
+    .categoria-imagen {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1,h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    .tamanio {
+        width: 45%;
+    }
+    
+    .carousel-img {
+        height: 350px;
+    }
+    .producto-item{
+        height: 280px;
+    }
+
+    nav {
+        display: none;
+    }
+    .nav2 {
+        display: contents;
+    }
+    
+    
 }

@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <link rel="stylesheet" href="css/styles.css">
     <title>ELECTROGAR</title>
 </head>
 <body>
     <header>
         <a href="./index.html"><img src="/imagenes/LOGO.png" alt=""></a>
-        <nav>
+        <nav class="nav1">
             <ul>
                 <li><a href="./pages/miCuenta.html">MI CUENTA</a></li>
                 <li><a href="./pages/miCarrito.html">MI CARRITO</a></li>
@@ -20,6 +19,21 @@
                 <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
             </ul>
         </nav>
+
+        <nav class="nav2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="./pages/miCuenta.html">MI CUENTA</a></li>
+                    <li><a href="./pages/miCarrito.html">MI CARRITO</a></li>
+                    <li><a href="./pages/sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
+                </ul>
+              </div>
+        </nav>
+
         
     </header>
 
@@ -28,13 +42,13 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade tamanio">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="carousel-img"src="./imagenes/TV.png" class="d-block" alt="...">
+                <img class="carousel-img"src="./imagenes/NOTEBOOK1.png" class="d-block" alt="...">
               </div>
               <div class="carousel-item">
-                <img class="carousel-img" src="./imagenes/LAVARROPA.png" class="d-block" alt="...">
+                <img class="carousel-img" src="./imagenes/LAVARROPA1.png" class="d-block" alt="...">
               </div>
               <div class="carousel-item">
-                <img class="carousel-img" src="./imagenes/NOTEBOOK.png" class="d-block" alt="...">
+                <img class="carousel-img" src="./imagenes/TV1.png" class="d-block" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -51,21 +65,21 @@
     <section class="masVendido">
         <h2>MAS VENDIDOS</h2>
         <div class="productos">
-            <div class="producto-item"><img class="producto-item-img" src="./imagenes/producto1.png" alt=""><p>Aire Acondicionado Split Philco 3400W Frío/Calor EA PHS32HA4CN</p></div>
-            <div class="producto-item"><img class="producto-item-img" src="./imagenes/producto2.png" alt=""><p>Pava eléctrica Nórdica PEATW2 1.7 lt con corte Atma</p></div>
-            <div class="producto-item"><img class="producto-item-img" src="./imagenes/producto3.png" alt=""><p>Ventilador de pie 25" VPM-25N Moddo</p></div>
+            <div class="producto-item"><img class="producto-item-img" src="./imagenes/SPLIT.png" alt=""><p class="vendidoP">Aire Acondicionado Split Philco 3400W Frío/Calor EA PHS32HA4CN</p></div>
+            <div class="producto-item"><img class="producto-item-img" src="./imagenes/PAVA_ELECTRICA.png" alt=""><p class="vendidoP">Pava eléctrica Nórdica PEATW2 1.7 lt con corte Atma</p></div>
+            <div class="producto-item"><img class="producto-item-img" src="./imagenes/VENTILADOR_PIE.png" alt=""><p class="vendidoP">Ventilador de pie 25" VPM-25N Moddo</p></div>
         </div>
     </section>
 
     <section class="categorias-padre">
         <h2>CATEGORIAS</h2>
         <div class="categorias-hijo">
-            <div class="categorias-hijo-item1"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/TV.png" alt="">SMART TV</a></div>
-            <div class="categorias-hijo-item2"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/CELULAR.png" alt="">CELULARES</a></div>
-            <div class="categorias-hijo-item3"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/NOTEBOOK.png" alt="">NOTEBOOKS</a></div>
-            <div class="categorias-hijo-item4"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/LAVARROPA.png" alt="">LAVARROPAS</a></div>
-            <div class="categorias-hijo-item5"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/auricular.png" alt="">AURICULARES Y PARLANTES</a></div>
-            <div class="categorias-hijo-item6"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/aire.png" alt="">CLIMATIZACION</a></div>
+            <div class="categorias-hijo-item1 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/TV.png" alt="">SMART TV</a></div>
+            <div class="categorias-hijo-item2 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/CELULAR.png" alt="">CELULARES</a></div>
+            <div class="categorias-hijo-item3 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/NOTEBOOK.png" alt="">NOTEBOOKS</a></div>
+            <div class="categorias-hijo-item4 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/LAVARROPA.png" alt="">LAVARROPAS</a></div>
+            <div class="categorias-hijo-item5 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/auricular.png" alt="">AURICULARES <br />Y PARLANTES</a></div>
+            <div class="categorias-hijo-item6 cat-item"><a class="item-a" href=""><img class="categoria-imagen" src="./imagenes/aire.png" alt="">CLIMATIZACION</a></div>
         </div>
     </section>
 
@@ -75,9 +89,9 @@
                 <h3><p>SEGUINOS EN</p></h3>
                         <a href="https://www.facebook.com/"><img class="footer-logo" src="./imagenes/face.png" alt=""></a>
 
-                        <a href="https://www.instagram.com/"><img class="footer-logo" src="./imagenes/insta.png" alt=""></a>
+                        <a class="logo-IG" href="https://www.instagram.com/"><img class="footer-logo" src="./imagenes/insta.png" alt=""></a>
 
-                        <a href="https://twitter.com/home"><img class="footer-logo" src="./imagenes/twitter.png" alt=""></a>
+                        <a class="logo-X" href="https://twitter.com/home"><img class="footer-logo" src="./imagenes/twitter.png" alt=""></a>
 
             </div>
     
@@ -102,7 +116,9 @@
 
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
