@@ -205,6 +205,53 @@ p {
 }
 
 
+
+
+
+
+
+/* MI CUENTA HTML */
+
+.cuenta {
+    display: flex;
+}
+
+
+.cuenta {
+    padding: 4.5%;
+}
+
+.login, .crearCuenta {
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+}
+
+.login-text2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login-text {
+    color: #3b529e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
 
 
@@ -349,6 +396,18 @@ nav {
         margin: 0px 0px;
     }
 
+    .login-text2 {
+        font-size: 14px;
+    }
+    
+    .login-text {
+        font-size: 17px;
+    }
+
+    .cuenta {
+        padding: 0px;
+    }
+
 }
 
 
@@ -376,6 +435,17 @@ nav {
 
     h3 {
         font-size: 15px;        
+    }
+
+    .login-text2 {
+        font-size: 11px;
+    }
+    
+    .login-text {
+        font-size: 14px;
+    }
+    .ingresar-text {
+        font-size: 25px;
     }
     
 }
@@ -437,3 +507,5 @@ nav {
         margin-top: 0px;
     }
 }
+
+

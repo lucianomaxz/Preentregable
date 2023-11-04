@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Roboto:ital@1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
     <title>ELECTROGAR</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="/imagenes/LOGO.png" alt=""></a>
-        <nav>
+        <a href="../index.html"><img class="header-logo" src="../imagenes/LOGO.png" alt=""></a>
+        <nav class="nav1">
             <ul>
                 <li><a href="./miCuenta.html">MI CUENTA</a></li>
                 <li><a href="./miCarrito.html">MI CARRITO</a></li>
@@ -22,60 +22,78 @@
                 <li><a href="./contactanos.html">CONTACTANOS</a></li>
             </ul>
         </nav>
+
+        
+        <nav class="nav2">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle boton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="./pages/miCuenta.html">MI CUENTA</a></li>
+                    <li><a href="./pages/miCarrito.html">MI CARRITO</a></li>
+                    <li><a href="./pages/sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
+                </ul>
+              </div>
+        </nav>
     </header>
 
-    <section>
-        <h2>INGRESA O CREA UNA CUENTA</h2>
-        <div class="cuenta">
-            <div class="login">
-                <p>YA ESTOY REGISTRADO</p>
-                <form action="">
-                    <label for="">EMAIL</label>
-                    <input type="email" name="" id="">
-                    <label for="">CONTRASEÑA</label>
-                    <input type="password" name="" id="">
-                </form>
+    <section class="container">
+        <h2 class="ingresar-text">INGRESA O CREA UNA CUENTA</h2>
+            
+            <div class="cuenta">
+                <div class="login">
+                    <p class="login-text">YA ESTOY REGISTRADO</p>
+                    <form action="">
+                        <label class="login-text" for="">EMAIL</label>
+                        <input class="text-email" type="email" name="" id="">
+                        <label class="login-text" for="">CONTRASEÑA</label>
+                        <input type="password" name="" id="">
+                    </form>
+                </div>
+                <div class="crearCuenta">
+                    <p class="login-text">NO TENGO CUENTA</p>
+                    <p class="login-text2">Si no tienes cuenta, puedes hacer "Click" en "Crear Cuenta". Deberás completar con tus datos y listo. Ya tendrás tu cuenta creada!</p>
+                    <a class="login-text" href="">CREAR CUENTA</a>
+                </div>
             </div>
-            <div class="crearCuenta">
-                <p>NO TENGO CUENTA</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quia, vitae earum, accusantium placeat distinctio, illo sint quae esse aliquam perferendis aperiam. Eveniet pariatur aperiam velit. Laborum necessitatibus sapiente id.</p>
-                <a href="">CREAR CUENTA</a>
-            </div>
-        </div>
+        
 
     </section>
 
-    <footer>
+    
+    <footer class="container-fluid">
         <div class="footer-container">
             <div class="footer-logos">
                 <h3><p>SEGUINOS EN</p></h3>
-                        <a href="https://www.facebook.com/"><img class="footer-logo" src="../imagenes/face.png" alt=""></a>
+                        <a class="logo-F logo" href="https://www.facebook.com/"><img class="footer-logo" src="../imagenes/face.png" alt=""></a>
 
-                        <a href="https://www.instagram.com/"><img class="footer-logo" src="../imagenes/insta.png" alt=""></a>
+                        <a class="logo-IG logo" href="https://www.instagram.com/"><img class="footer-logo" src="../imagenes/insta.png" alt=""></a>
 
-                        <a href="https://twitter.com/home"><img class="footer-logo" src="../imagenes/twitter.png" alt=""></a>
+                        <a class="logo-X logo" href="https://twitter.com/home"><img class="footer-logo" src="../imagenes/twitter.png" alt=""></a>
 
             </div>
     
             <div class="footer-cl">
                 <div class="footer-cl-item cl1">
-                    <h3><p>ATENCION CLIENTE</p></h3>
-                    <ul>
+                    <h3 class="h3-ac"><p>ATENCION CLIENTE</p></h3>
+                    <ul class="item-ul">
                         <li><p>xxxx-xxxx-xxxx</p></li>
                         <li><p>xxxx-xxxx-xxxx</p></li>
                     </ul>
                 </div>
                 <div class="footer-cl-item cl2">
-                    <h3><p>HORARIOS</p></h3>
-                    <ul>
+                    <h3><p class="p-horarios">HORARIOS</p></h3>
+                    <ul class="item-ul">
                         <li><p>xxxx-xxxx</p></li>
                         <li><p>xxxx-xxxx</p></li>
                     </ul>
                 </div>
             </div>
-        </div>
-        
+        </div>        
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
