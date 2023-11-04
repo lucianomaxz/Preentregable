@@ -246,7 +246,10 @@ input {
 
 
 
-
+.footer-miCuenta {
+    position: absolute;
+    bottom: 0;
+}
 
 
 
