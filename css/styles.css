@@ -27,6 +27,14 @@ header, ul {
     display: none;
 }
 
+.boton {
+    background-color: #ece4cd;
+    color: #3b529e;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+}
+
 nav {
     width: 50%;
 }
@@ -268,6 +276,160 @@ nav {
     .nav2 {
         display: contents;
     }
+    h1,h2 {
+        font-size: 1.8rem;
+    }
     
+    .categorias-padre {
+        padding: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .tamanio {
+        width: 60%;
+    }
+
+    .carousel-img {
+        height: 400px;
+    }
+
+    .producto-item{
+        height: 200px;
+    }
+    h3, .logo {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 652px) {
+
+    .tamanio {
+        width: 60%;
+    }
+
+    .carousel-img {
+        height: 400px;
+    }
+
+    .producto-item{
+        height: 200px;
+    }
+
+    .categorias-hijo {
+        display: grid;
+        grid-template-areas:
+        "categorias-hijo-item1"
+        "categorias-hijo-item2"
+        "categorias-hijo-item3"
+        "categorias-hijo-item4"
+        "categorias-hijo-item5"
+        "categorias-hijo-item6";
     
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .categoria-imagen {
+        width: 120px;
+        height: 120px;
+    }
+    .vendidoP {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .item-ul {
+        margin: 0px 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .tamanio {
+        width: 50%;
+    }
+
+    .carousel-img {
+        height: 250px;
+    }
+
+    .producto-item{
+        height: 150px;
+    }
+
+    .vendidoP {
+        font-size: 11px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+
+    .header-logo {
+        width: 150px;
+    }
+
+    .boton {
+        width: 100px;
+        padding: 0px;
+    }
+    a {
+        font-size: 15px;
+    }
+    .p-horarios {
+        margin-left: 0%;
+    }
+
+    .tamanio {
+        width: 70%;
+    }
+
+    .carousel-img {
+        height: 260px;
+    }
+
+    .producto-item{
+        height: 100px;
+    }
+
+    .vendidoP {
+        font-size: 9px;
+    }
+    h1,h2 {
+        font-size: 1.5rem;
+    }
+    .item-ul {
+        margin: 0px 0px;
+    }
+
+    h3 {
+        margin-left: 0px;
+    }
+    .h3-ac, .p-horarios {
+        margin-left: 27px;
+    }
+
+    .footer-logo {
+        width: 25px;
+        height: 25px;
+    }
+
 }
