@@ -375,12 +375,13 @@ nav {
     }
 
     h3 {
-        font-size: 15px;
+        font-size: 15px;        
     }
+    
 }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 440px) {
 
 
     .header-logo {
@@ -432,4 +433,7 @@ nav {
         height: 25px;
     }
 
+    footer {
+        margin-top: 0px;
+    }
 }
