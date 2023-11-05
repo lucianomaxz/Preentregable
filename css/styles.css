@@ -336,7 +336,9 @@ textarea {
     padding: 1%;
 }
 
-
+.h3-ac, .p-horarios {
+    margin-left: 27px;
+}
 
 @media only screen and (max-width: 1300px) {
 
@@ -426,7 +428,10 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-
+    .nosotros {
+        background-size: contain;
+        height: 400px;
+    }
 
 }
 
@@ -528,7 +533,9 @@ nav {
     .contactanos {
         margin-top: 10%;
     }
-
+    .nosotros {
+        height: 250px;
+    }
 }
 
 
@@ -597,7 +604,10 @@ nav {
         height: 250px;
     }
     .cuenta {
-        margin-top: 20%;
+        margin-top: 10%;
+    }
+    .nosotros {
+        height: 150px;
     }
 }
 
@@ -645,9 +655,7 @@ nav {
     h3 {
         margin-left: 0px;
     }
-    .h3-ac, .p-horarios {
-        margin-left: 27px;
-    }
+
 
     .footer-logo {
         width: 25px;
@@ -663,6 +671,10 @@ nav {
     }
     .contactanos {
         margin-top: 4%;
+    }
+
+    p {
+        font-size: 11px;
     }
 }
 
