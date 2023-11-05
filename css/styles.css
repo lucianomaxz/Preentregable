@@ -260,9 +260,14 @@ input {
     font-weight: bold;
 }
 
+.crearCuenta {
+    margin-top: 7%;
+}
+.miCuenta-enviar {
+    margin-top: 5%;
+}
 
-
-.footer-miCuenta {
+.footer-miCuenta, .footer-contactanos {
     position: absolute;
     bottom: 0;
 }
@@ -299,16 +304,37 @@ input {
 
 
 
+.contactanos {
+    display: flex;
+    margin-top: 2%;
+}
 
 
+.direccion {
+    display: flex;
+    flex-direction: column;
+}
 
 
+iframe {
+    width: 100%;
+}
 
+.datos {
+    width: 50%;
+}
+.direccion {
+    width: 60%;
+}
 
+textarea {
+    width: 80%;
+}
 
-
-
-
+.contactanos-enviar {
+    margin: 15%;
+    padding: 1%;
+}
 
 
 
@@ -391,6 +417,17 @@ nav {
     .categorias-padre {
         padding: 50px;
     }
+    .contactanos {
+        margin-top: 0%;
+    }
+
+    .cuenta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 
@@ -416,7 +453,12 @@ nav {
         height: 200px;
     }
 
-
+    .footer-contactanos {
+        position: relative;
+    }
+    iframe {
+        height: 350px;
+    }
 }
 
 @media only screen and (max-width: 652px) {
@@ -472,13 +514,19 @@ nav {
         font-size: 17px;
     }
 
-    .cuenta {
-        padding: 0px;
-    }
 
     .carrito-productos-img {
         width: 150px;
         height: 150px;
+    }
+
+    .footer-contactanos {
+        position: absolute;
+    }
+
+
+    .contactanos {
+        margin-top: 10%;
     }
 
 }
@@ -528,6 +576,28 @@ nav {
     .pagos-img {
         width: 300px;
         height: 80px;
+    }
+    .footer-contactanos {
+        position: relative;
+
+    }
+
+    .contactanos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    textarea {
+        height: 200px;
+    }
+    iframe {
+        height: 250px;
+    }
+    .cuenta {
+        margin-top: 20%;
     }
 }
 
@@ -586,6 +656,13 @@ nav {
 
     footer {
         margin-top: 0px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+    .contactanos {
+        margin-top: 4%;
     }
 }
 
