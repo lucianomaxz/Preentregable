@@ -1,0 +1,480 @@
+@import "partials/variables";
+
+@mixin tipoLetra ($v1,$v2,$v3,$v4) {
+        margin-top: $v1;
+        color: $v2;
+        font-size: $v3;
+        font-weight: $v4;
+}
+@mixin tipoLetra2 ($v2,$v3,$v4) {
+    color: $v2;
+    font-size: $v3;
+    font-weight: $v4;
+}
+
+@mixin footer_display ($v1,$v2){
+    display: $v1;
+    justify-content: $v2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+header {
+    position: sticky;
+    top:0px;
+    z-index: 2;
+    background-color: $colorFondo;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+
+
+
+
+    img {
+        margin: 7px 7px;
+    }
+
+    ul {
+        background-color: $colorFondo;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-around;
+        margin: 7px 7px;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    .nav2 {
+        display: none;
+
+        .boton {
+            background-color: $colorFondo;
+            color: $colorLetra1;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border: none;
+        }
+
+    }
+
+    a {
+        @include tipoLetra2($colorLetra1,21px , bold)
+    }
+
+    a:link, a:visited, a:active {
+        text-decoration: none;
+    }
+    a:hover{
+        font-size: 27px;
+        color: rgba(17, 20, 209, 0.856);
+        transition: all 0.5s;
+    }
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    h1 {
+        @include tipoLetra(10px, $colorLetra1, 3rem, bold)
+    }
+
+    .tamanio {
+        width: 55%;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 800px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url(../imagenes/flecha.png);
+    }
+    .carousel-control-prev-icon {
+        background-image: url(../imagenes/flecha.png);
+        transform: rotate(-180deg);
+    }
+
+}
+
+.masVendido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+
+    h2 {
+        @include tipoLetra(10px, $colorLetra1, 3rem, bold)
+    }
+
+
+    .productos {
+        display: flex;
+        width: 100%;
+        .producto-item {
+            width: 33%;
+            height: 400px;
+            margin: 3%;
+
+            .producto-item-img:hover{
+                filter: brightness(82%);
+                transition: all 0.6s ease;
+            }
+
+
+            .producto-item-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+        .vendidoP {
+            margin-left: 25px;
+            color: $colorLetra2;
+        }
+
+    }
+}
+
+    .categorias-padre {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+
+        h2 {
+            @include tipoLetra(10px, $colorLetra1, 3rem, bold)
+        }
+
+        .categorias-hijo {
+            display: grid;
+            grid-template-areas:
+            "categorias-hijo-item1" "categorias-hijo-item2" "categorias-hijo-item3"
+            "categorias-hijo-item4" "categorias-hijo-item5" "categorias-hijo-item6";
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            width: 100%;
+
+            .cat-item {
+                width: 100%;
+                height: 100%;
+
+
+
+
+                    a {
+                        @include tipoLetra2($colorLetra1,21px , bold)
+                    }
+                    a:link, a:visited, a:active {
+                        text-decoration: none;
+                    }
+                    .item-a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                        .categoria-imagen {
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .categoria-imagen:hover{
+                            transition: all 0.6s ease;
+                            transform: scale(1.2);
+                        }
+                    }
+            }
+
+        }
+    }
+
+    .container {
+        .ingresar-text{
+            @include tipoLetra(10px, $colorLetra1, 3rem, bold);
+        }
+        .cuenta{
+            .login{
+                input:focus{
+                    color: rgb(0, 132, 255);
+                    font-family: 'Courier New', Courier, monospace;
+                }
+            }
+        }
+    }
+    .miCarrito-misProductos{
+        @include tipoLetra(10px, $colorLetra1, 2.5rem, bold);
+        margin-left:1%;
+    }
+
+footer {
+    background-color: $colorFondo;
+    margin-top: 20px;
+
+
+
+    .footer-container {
+        @include footer_display(flex, space-between);
+    }
+
+    .footer-cl{
+        @include footer_display(flex, space-between);
+        ul {
+            list-style-type: none;
+        }
+    }
+    .contactanos {
+        @include footer_display(flex, space-between);
+    }
+    .cuenta {
+        @include footer_display(flex, space-between);
+    }
+
+    .footer-logos {
+        .logo-X {
+            margin-left: 5%;
+        }
+        .logo-IG {
+            margin-left: 5%;
+        }
+
+        .footer-logo {
+            width: 30px;
+            height: 30px;
+        }
+        p {
+            color: $colorLetra2;
+        }
+        a:hover{
+            font-size: 27px;
+            transition: all 0.5s;
+        }
+
+    }
+
+    .footer-cl-item {
+        p {
+            color: $colorLetra2;
+        }
+        .h3-ac {
+            margin-left: 27px;
+        }
+        .p-horarios {
+            margin-left: 27px;
+        }
+        .item-ul {
+            margin: 0px 0px;
+        }
+    }
+
+
+}
+
+
+
+//MI CARRITO
+
+.productos{
+    .carrito {
+        display: flex;
+        flex-direction: column;
+        .carrito-productos {
+            display: flex;
+            .carrito-productos-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .carrito-productos-img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+
+        .pagos{
+            .pagos-img {
+                width: 400px;
+                height: 100px;
+            }
+        }
+
+        .login-text, a{
+            color: $colorLetra1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a:link, a:visited, a:active {
+            text-decoration:none;
+        }
+    }
+}
+
+.footer-miCuenta {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+//SOBRE NOSOTROS
+
+.sobre-nosotros{
+    width: 100%;
+    .nosotros{
+        background-image: url(../imagenes/personas1.png);
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container{
+        h2{
+            @include tipoLetra(10px, $colorLetra1, 1.8rem, bold)
+        }
+        p{
+            @include tipoLetra2($colorLetra1,16px , none)
+        }
+        .login-text{
+            color: $colorLetra1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .login-text2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $colorLetra1;
+        }
+        .div-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+            iframe {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//CONTACTANOS
+
+section{
+    .contactanos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+        .login-text{
+            color: $colorLetra1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .login-text2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $colorLetra1;
+        }
+            .datos {
+                width: 50%;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        width: 50%;
+                    }
+                    input:focus,textarea:focus{
+                        color: rgb(0, 132, 255);
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+                    textarea {
+                        width: 80%;
+                    }
+                    .contactanos-enviar {
+                        margin: 15%;
+                        padding: 1%;
+                    }
+                }
+            }
+            .direccion {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                iframe {
+                    width: 100%;
+                }
+            }
+    }
+}
+
+
+@import "partials/mediaQ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
