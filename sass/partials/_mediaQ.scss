@@ -126,12 +126,22 @@
         }
     }
 
-    
-    .cuenta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .container{
+        .cuenta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                
+                .login{
+                    width: 100%;
+                }
+                .crearCuenta{
+                    width: 100%;
+                }
+        }
     }
+    
+
     .sobre-nosotros{
         .nosotros {
             background-size: contain;
@@ -323,17 +333,6 @@
             }
         }
     }
-    .container{
-        .cuenta{
-            .login-text2 {
-                font-size: 14px;
-            }
-            
-            .login-text {
-                font-size: 17px;
-            }
-        }
-    }
 
 }
 
@@ -435,22 +434,12 @@
         }
         .container{
             .ingresar-text{
-                font-size: 25px;
+                font-size: 30px;
             }
-            .cuenta{
-                .login-text2 {
-                    font-size: 11px;
-                }
-                
-                .login-text {
-                    font-size: 14px;
-                }
-            }
+
         }
 
-        .cuenta {
-            margin-top: 10%;
-        }
+
 }
 
 
