@@ -170,15 +170,50 @@ header a:hover {
   transform: scale(1.2);
 }
 
+.container .login-text {
+  color: #3b529e;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .login-text2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3b529e;
+}
 .container .ingresar-text {
   margin-top: 10px;
   color: #3b529e;
   font-size: 3rem;
   font-weight: bold;
 }
+.container .cuenta {
+  display: flex;
+  padding: 4.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .cuenta .login {
+  width: 50%;
+}
 .container .cuenta .login input:focus {
   color: rgb(0, 132, 255);
   font-family: "Courier New", Courier, monospace;
+}
+.container .cuenta .login form {
+  display: flex;
+  flex-direction: column;
+}
+.container .cuenta .login form input {
+  width: 50%;
+}
+.container .cuenta .crearCuenta {
+  width: 50%;
+  margin-top: 7%;
+}
+.container .cuenta .crearCuenta .login-text2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3b529e;
 }
 
 .miCarrito-misProductos {
@@ -205,10 +240,6 @@ footer .footer-cl ul {
   list-style-type: none;
 }
 footer .contactanos {
-  display: flex;
-  justify-content: space-between;
-}
-footer .cuenta {
   display: flex;
   justify-content: space-between;
 }
@@ -350,7 +381,8 @@ section .contactanos .datos form textarea {
   width: 80%;
 }
 section .contactanos .datos form .contactanos-enviar {
-  margin: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   padding: 1%;
 }
 section .contactanos .direccion {
@@ -467,6 +499,31 @@ section .contactanos .direccion iframe {
   .footer-container .footer-cl .footer-cl-item h3 {
     margin-left: 20px;
   }
+  section .contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .contactanos .direccion {
+    width: 100%;
+  }
+  section .contactanos .login-text2 {
+    font-size: 22px;
+  }
+  section .contactanos .login-text {
+    font-size: 18px;
+  }
+  section .contactanos .datos {
+    width: 70%;
+  }
+  section .contactanos .datos form input {
+    width: 100%;
+  }
+  section .contactanos .datos form textarea {
+    height: 150px;
+    width: 100%;
+  }
   .productos .carrito .carrito-productos .carrito-productos-div .carrito-productos-img {
     width: 200px;
     height: 200px;
@@ -510,15 +567,6 @@ section .contactanos .direccion iframe {
   }
   .footer-contactanos {
     position: absolute;
-  }
-  section .contactanos {
-    margin-top: 10%;
-  }
-  section .contactanos .login-text2 {
-    font-size: 14px;
-  }
-  section .contactanos .login-text {
-    font-size: 17px;
   }
   .sobre-nosotros .nosotros {
     height: 250px;
@@ -571,21 +619,6 @@ section .contactanos .direccion iframe {
   }
   .footer-contactanos {
     position: relative;
-  }
-  section .contactanos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  section .contactanos .login-text2 {
-    font-size: 11px;
-  }
-  section .contactanos .login-text {
-    font-size: 14px;
-  }
-  section .contactanos .datos textarea {
-    height: 200px;
   }
   .sobre-nosotros .nosotros {
     height: 150px;
@@ -664,11 +697,33 @@ section .contactanos .direccion iframe {
     margin: 0px 0px;
   }
   section .contactanos {
-    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  section .contactanos .datos textarea {
-    height: 100px;
+  section .contactanos .direccion {
+    width: 100%;
+  }
+  section .contactanos .direccion div iframe {
+    height: 400px;
+  }
+  section .contactanos .login-text2 {
+    font-size: 17px;
+  }
+  section .contactanos .login-text {
+    font-size: 18px;
+  }
+  section .contactanos .datos {
+    width: 70%;
+  }
+  section .contactanos .datos form input {
+    width: 100%;
+  }
+  section .contactanos .datos form textarea {
+    height: 150px;
+    width: 100%;
   }
 }
 
-/*# sourceMappingURL=stylesDesass.css.map */
+/*# sourceMappingURL=stylesDeSass.css.map */

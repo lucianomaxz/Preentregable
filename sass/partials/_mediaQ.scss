@@ -174,7 +174,40 @@
         }
 
     }
+    section{
+        .contactanos {
 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .direccion{
+                width: 100%;
+            }
+
+            .login-text2 {
+                font-size: 22px;
+            }
+            
+            .login-text {
+                font-size: 18px;
+            }
+            .datos{
+                width: 70%;
+                form{
+                    input{
+                        width: 100%;
+                    }
+                    textarea {
+                        height: 150px;
+                        width: 100%;
+                    }
+                }
+               
+            }
+        }
+    }
     .productos{
         .carrito{
             .carrito-productos{
@@ -274,18 +307,6 @@
     }
     .footer-contactanos {
         position: absolute;
-    }
-    section{
-        .contactanos {
-            margin-top: 10%;
-                .login-text2 {
-                    font-size: 14px;
-                }
-                
-                .login-text {
-                    font-size: 17px;
-                }
-        }
     }
 
     .sobre-nosotros{
@@ -391,28 +412,7 @@
         .footer-contactanos {
             position: relative;
         }
-        section{
-            .contactanos {
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-    
-                .login-text2 {
-                    font-size: 11px;
-                }
-                
-                .login-text {
-                    font-size: 14px;
-                }
-                .datos{
-                    textarea {
-                        height: 200px;
-                    }
-                }
-            }
-        }
         
         .sobre-nosotros{
             .nosotros {
@@ -542,11 +542,39 @@
     section{
         .contactanos {
 
-            margin-top: 4%;
-            .datos{
-                textarea {
-                    height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .direccion{
+                width: 100%;
+                div {
+                    iframe{
+                        height: 400px;
+                    }
                 }
+            }
+
+            .login-text2 {
+                font-size: 17px;
+            }
+            
+            .login-text {
+                font-size: 18px;
+            }
+            .datos{
+                width: 70%;
+                form{
+                    input{
+                        width: 100%;
+                    }
+                    textarea {
+                        height: 150px;
+                        width: 100%;
+                    }
+                }
+               
             }
         }
     }
