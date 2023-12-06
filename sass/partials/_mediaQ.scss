@@ -128,20 +128,27 @@
 
     .container{
         .cuenta {
-            display: flex;
             flex-direction: column;
             align-items: center;
-                
+
+
+            .login-text2{
+                text-align: center;
+            }
+
+
                 .login{
-                    width: 100%;
+                    display: contents;
                     form{
+                        align-items: center;
                         input{
-                            margin-top: 2%;
+                            width: 100%;
                         }
                     }
                 }
                 .crearCuenta{
                     width: 100%;
+                    display: contents;
                 }
         }
     }
@@ -244,6 +251,15 @@
               iframe {
                 height: 350px;
             }
+        }
+    }
+    .container{
+        .login-text{
+            font-size: 22px;
+        }
+        
+        .login-text2{
+            font-size: 16px;
         }
     }
 }

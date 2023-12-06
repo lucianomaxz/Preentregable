@@ -469,18 +469,24 @@ section .contactanos .direccion iframe {
     margin-top: 0%;
   }
   .container .cuenta {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .container .cuenta .login-text2 {
+    text-align: center;
+  }
   .container .cuenta .login {
-    width: 100%;
+    display: contents;
+  }
+  .container .cuenta .login form {
+    align-items: center;
   }
   .container .cuenta .login form input {
-    margin-top: 2%;
+    width: 100%;
   }
   .container .cuenta .crearCuenta {
     width: 100%;
+    display: contents;
   }
   .sobre-nosotros .nosotros {
     background-size: contain;
@@ -537,6 +543,12 @@ section .contactanos .direccion iframe {
   }
   .sobre-nosotros .div-video iframe {
     height: 350px;
+  }
+  .container .login-text {
+    font-size: 22px;
+  }
+  .container .login-text2 {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 652px) {
