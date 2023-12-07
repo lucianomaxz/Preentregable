@@ -492,6 +492,10 @@ section .contactanos .direccion iframe {
     background-size: contain;
     height: 400px;
   }
+  .footer-miCuenta {
+    position: relative;
+    bottom: unset;
+  }
 }
 @media only screen and (max-width: 750px) {
   .ofertas .tamanio {
